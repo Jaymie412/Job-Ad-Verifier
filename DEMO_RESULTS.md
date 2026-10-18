@@ -3,7 +3,7 @@
 Recorded live in GenLayer Studio (studio-next.genlayer.com, Studio v0.123.0-rc.7) on 18 October 2026.
 
 - Contract file: `contract.py`, version `job-ad-verifier-0.2`
-- Contract address: `0x7c8d9c45f5C4C64fE78E71BE32C5bc98675975b3` ([deployed](deployed.png))
+- Contract address: `0x7c8d9c45f5C4C64fE78E71BE32C5bc98675975b3` ([deployed](Deployed.png))
 - Employer account (A): `0xcEF370093e5509bcA5E1e4c6661ee2EEa3f38187`
 - Jobseeker account (B): `0xa0a94e12fFF1f8b6cE9aE08EBB6eaf0e94AEE435`
 - Advert used in Part B: [scam_ad.txt](https://raw.githubusercontent.com/Jaymie412/Job-Ad-Verifier/refs/heads/main/scam_ad.txt)
