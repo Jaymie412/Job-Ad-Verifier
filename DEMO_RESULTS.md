@@ -47,7 +47,7 @@ The employer's reply did not change the verdict: under the published policy any 
 
 ## What went wrong along the way
 
-An earlier deployment (`0x4723…814d`) passed all 5 demos, but the first live `verify` ended **UNDETERMINED** ([consensus-blocked](consensus-blocked.png)): three validators disagreed with the leader, so nothing was written. The contract required validators to match every secondary red flag exactly, and live gov.uk and Companies House pages can differ slightly between fetches.
+An earlier deployment (`0x4723…814d`) passed all 5 demos, but the first live `verify` ended **UNDETERMINED** ([consensus-blocked](consensus-blocked.jpeg)): three validators disagreed with the leader, so nothing was written. The contract required validators to match every secondary red flag exactly, and live gov.uk and Companies House pages can differ slightly between fetches.
 
 I changed the agreement rule: validators must now reach the same **verdict**, and each one still audits the leader's individual answers and quotes. I also raised the page limit so the wage figure isn't cut off. The fixed contract was redeployed at the address above, and all evidence in this file comes from that one deployment. Its live `verify` was accepted by GPT-5.4, Gemini and a second GPT-5.4 validator.
 
