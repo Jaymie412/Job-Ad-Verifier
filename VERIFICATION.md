@@ -49,4 +49,11 @@ The official `genlayer-test` package couldn't be installed in the environment us
 
 ## Live Studio evidence
 
-See [DEMO_RESULTS.md](DEMO_RESULTS.md) for the deployment of version 0.3 and screenshots of each regression case.
+Recorded in GenLayer Studio on 28 October 2026 at `0x1C98584EdDe1cc272F54A7537BfD1962248263Ce` (reply window 30 minutes). Full details and screenshots are in [DEMO_RESULTS.md](DEMO_RESULTS.md).
+
+- All 6 isolated demos matched, including the prompt-injection case and the new unrelated-advert case, and created no records.
+- **Unrelated advert:** an advert naming Riverside Patrol Ltd, submitted against Elite Guard Recruitment, closed as UNRELATED and never reached the employer's record.
+- **Premature closure:** the jobseeker's `finalise` straight after the first check was refused; the check stayed CHECKED and uncounted.
+- **Valid hash-bound reply:** the employer replied with the exact check hash before the deadline; the re-check closed it FINAL (`rechecked_after_reply`).
+- **Unavailable reply-stage evidence:** after the employer replied, the advert was deleted. The first re-check kept the check open (1 of 2); the second closed it FINAL on the first agreed verdict (`reply_stage_evidence_unavailable`).
+- **Exactly-once accounting:** a second `finalise` and a second `accept_check` on final checks both ended with Result ERROR. The final record shows `final_checks` 2 and `counted_check_ids` [0, 2].
